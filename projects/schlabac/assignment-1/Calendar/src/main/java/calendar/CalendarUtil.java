@@ -29,7 +29,7 @@ public class CalendarUtil {
 		
 		int baseDays = DaysInMonth[month];
 	
-		if(IsLeapYear(year) && (month == FEBRUARY)) {
+		if(IsLeapYear(year)){
 				baseDays = baseDays + 1;
 		}
 	
@@ -49,7 +49,7 @@ public class CalendarUtil {
 				return true;
 			}
 			else{
-				return false;
+				return true;
 			}
 		}
 	
